@@ -1,0 +1,176 @@
+/* General Body and Container Styles */
+body {
+    font-family: "Amazon Ember", Arial, sans-serif; /* Amazon's typical font stack */
+    background-color: #eaeded; /* Light background for the overall page */
+    color: #111; /* Default text color */
+}
+
+.container {
+    background-color: #fff; /* White background for main content areas */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
+
+.product-container, .homepage-container, .contact-form-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Navbar Customization (Amazon Dark Blue) */
+.custom-navbar {
+    background-color: #232f3e !important; 
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+
+.custom-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.custom-navbar .nav-link {
+    color: #ccc;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #fff;
+}
+
+/* Product Card Styling for Homepage */
+.product-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Detail Page Styles */
+.main-product-img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.thumbnail-images img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 5px;
+}
+
+.thumbnail-images img:hover,
+.thumbnail-images img.active {
+    border-color: #f0c14b; /* Amazon's highlight color */
+    box-shadow: 0 0 0 2px #f0c14b;
+}
+
+.product-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #0f1111;
+}
+
+.product-rating {
+    font-size: 1.1rem;
+    color: #FF9900; /* Amazon star color */
+}
+
+.product-rating .fa-star.checked {
+    color: #FF9900;
+}
+
+.product-price {
+    font-size: 2.5rem;
+    color: #B12704; /* Amazon red for price */
+    font-weight: 500;
+}
+
+/* Buttons (Amazon Yellow and Orange) */
+.add-to-cart-btn {
+    background-color: #FFD814; 
+    border-color: #FCD200;
+    color: #111;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 20px; 
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #F7CA00;
+    border-color: #F2C200;
+    color: #111;
+}
+
+.buy-now-btn {
+    background-color: #FFA41C; 
+    border-color: #FF8F00;
+    color: #111;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 20px; 
+    transition: background-color 0.2s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #FA8900;
+    border-color: #E27B00;
+    color: #111;
+}
+
+/* Reviews */
+.review-card {
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #232f3e !important; 
+    color: #000000;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* In css/style.css */
+.custom-navbar .navbar-brand {
+    color: #ff9900; /* Example: Bright Amazon Orange */
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.custom-navbar .navbar-brand:hover {
+    color: #fff; /* White on hover */
+}
+/* In css/style.css */
+
+.custom-footer {
+    /* CHANGED: Set the background color to pure black */
+    background-color: #000000 !important; 
+    
+    color: #fff; /* Ensures the text remains white */
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* You might want to remove the specific orange text color rule
+   if you added it in the previous step, to keep the text white.
+.custom-footer p {
+    color: #FF9900; 
+    font-weight: 500;
+} 
+*/
